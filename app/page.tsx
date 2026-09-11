@@ -56,7 +56,6 @@ export default function Home() {
 
   useEffect(() => {
     const current = roles[roleIndex];
-
     const speed = deleting ? 45 : 85;
 
     const timer = setTimeout(() => {
@@ -83,9 +82,7 @@ export default function Home() {
     <main className="min-h-screen overflow-hidden bg-[#030303] text-white">
 
       {/* BACKGROUND */}
-
       <div className="fixed inset-0 -z-10">
-
         <motion.div
           animate={{
             x: [0, 120, -80, 0],
@@ -115,16 +112,11 @@ export default function Home() {
         />
 
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.025)_1px,transparent_1px)] bg-[size:55px_55px]" />
-
       </div>
 
-
       {/* NAVBAR */}
-
       <nav className="fixed left-0 right-0 top-0 z-50 border-b border-white/10 bg-black/60 backdrop-blur-xl">
-
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-
           <a
             href="#"
             className="text-xl font-black tracking-[0.25em]"
@@ -133,27 +125,21 @@ export default function Home() {
           </a>
 
           <div className="hidden gap-8 text-sm text-gray-400 md:flex">
-
             <a href="#about" className="transition hover:text-cyan-400">
               About
             </a>
-
             <a href="#education" className="transition hover:text-cyan-400">
               Education
             </a>
-
             <a href="#skills" className="transition hover:text-cyan-400">
               Skills
             </a>
-
             <a href="#projects" className="transition hover:text-cyan-400">
               Projects
             </a>
-
             <a href="#contact" className="transition hover:text-cyan-400">
               Contact
             </a>
-
           </div>
 
           <a
@@ -164,22 +150,15 @@ export default function Home() {
           >
             GitHub ↗
           </a>
-
         </div>
-
       </nav>
 
-
       {/* HERO */}
-
       <section className="relative flex min-h-screen items-center px-6 pb-20 pt-32">
-
         <div className="mx-auto grid w-full max-w-7xl items-center gap-16 lg:grid-cols-[1.2fr_0.8fr]">
 
           {/* HERO TEXT */}
-
           <div>
-
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -190,7 +169,6 @@ export default function Home() {
               AVAILABLE FOR OPPORTUNITIES
             </motion.div>
 
-
             <motion.p
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
@@ -200,17 +178,16 @@ export default function Home() {
               Hello, I&apos;m
             </motion.p>
 
-
+            {/* NAME */}
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.8 }}
               className="text-6xl font-black leading-none sm:text-7xl md:text-8xl"
             >
-              Fawas
+              Fawas P
               <span className="text-cyan-400">.</span>
             </motion.h1>
-
 
             <motion.div
               initial={{ opacity: 0 }}
@@ -223,7 +200,6 @@ export default function Home() {
               <span className="animate-pulse text-cyan-400">|</span>
             </motion.div>
 
-
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -235,14 +211,12 @@ export default function Home() {
               Artificial Intelligence, Machine Learning and Data Science.
             </motion.p>
 
-
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2 }}
               className="mt-9 flex flex-wrap gap-4"
             >
-
               <a
                 href="#projects"
                 className="rounded-full bg-white px-7 py-3.5 font-bold text-black transition hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(34,211,238,0.25)]"
@@ -250,19 +224,17 @@ export default function Home() {
                 Explore My Work ↓
               </a>
 
+              {/* FIXED RESUME LINK */}
               <a
-                href="/resume.pdf"
-                download
+                href="/fawas-portfolio/resume.pdf"
+                download="Fawas-P-Resume.pdf"
                 className="rounded-full border border-white/15 px-7 py-3.5 font-bold text-white transition hover:-translate-y-1 hover:border-cyan-400 hover:text-cyan-400"
               >
                 Download Resume
               </a>
-
             </motion.div>
 
-
             <div className="mt-12 flex gap-3">
-
               <SocialLink
                 label="GH"
                 href="https://github.com/fawasp6456-boop"
@@ -282,21 +254,16 @@ export default function Home() {
                 label="@"
                 href="mailto:fawasp6456@gmail.com"
               />
-
             </div>
-
           </div>
 
-
           {/* PROFILE PHOTO */}
-
           <motion.div
             initial={{ opacity: 0, scale: 0.7 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
             className="flex justify-center lg:justify-end"
           >
-
             <div className="relative">
 
               <motion.div
@@ -322,14 +289,14 @@ export default function Home() {
 
               <div className="relative h-72 w-72 overflow-hidden rounded-full border-4 border-white/10 bg-white/5 shadow-[0_0_80px_rgba(34,211,238,0.18)] sm:h-80 sm:w-80">
 
+                {/* FIXED PROFILE PHOTO PATH */}
                 <img
-                  src="/profile.jpg"
-                  alt="Fawas"
+                  src="/fawas-portfolio/profile.jpg"
+                  alt="Fawas P"
                   className="h-full w-full object-cover"
                 />
 
               </div>
-
 
               <motion.div
                 animate={{ y: [0, -12, 0] }}
@@ -347,7 +314,6 @@ export default function Home() {
                   AI SYSTEMS
                 </p>
               </motion.div>
-
 
               <motion.div
                 animate={{ y: [0, 12, 0] }}
@@ -367,21 +333,15 @@ export default function Home() {
               </motion.div>
 
             </div>
-
           </motion.div>
-
         </div>
-
       </section>
 
-
       {/* ABOUT */}
-
       <section
         id="about"
         className="mx-auto max-w-7xl px-6 py-32"
       >
-
         <SectionTitle
           number="01"
           title="About Me"
@@ -389,7 +349,6 @@ export default function Home() {
         />
 
         <div className="grid gap-6 lg:grid-cols-3">
-
           <InfoCard
             icon="🧠"
             title="AI & Machine Learning"
@@ -407,19 +366,14 @@ export default function Home() {
             title="Explainable AI"
             text="Exploring transparent and interpretable AI systems that can provide meaningful reasoning."
           />
-
         </div>
-
       </section>
 
-
       {/* EDUCATION */}
-
       <section
         id="education"
         className="border-y border-white/5 bg-white/[0.02] py-32"
       >
-
         <div className="mx-auto max-w-7xl px-6">
 
           <SectionTitle
@@ -428,20 +382,17 @@ export default function Home() {
             subtitle="My academic journey"
           />
 
-
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             className="relative rounded-3xl border border-white/10 bg-white/[0.04] p-8 backdrop-blur-xl md:p-10"
           >
-
             <div className="absolute left-0 top-0 h-full w-1 rounded-l-3xl bg-gradient-to-b from-cyan-400 to-purple-500" />
 
             <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
 
               <div>
-
                 <p className="text-sm font-bold uppercase tracking-widest text-cyan-400">
                   Currently Pursuing
                 </p>
@@ -453,12 +404,9 @@ export default function Home() {
                 <p className="mt-2 text-lg text-gray-300">
                   Vimal Jyothi Engineering College, Chemperi
                 </p>
-
               </div>
 
-
               <div className="rounded-2xl border border-white/10 bg-black/30 px-6 py-4 text-center">
-
                 <p className="text-3xl font-black text-white">
                   4th
                 </p>
@@ -466,36 +414,26 @@ export default function Home() {
                 <p className="text-sm text-gray-500">
                   YEAR
                 </p>
-
               </div>
 
             </div>
-
           </motion.div>
-
         </div>
-
       </section>
 
-
       {/* SKILLS */}
-
       <section
         id="skills"
         className="mx-auto max-w-7xl px-6 py-32"
       >
-
         <SectionTitle
           number="03"
           title="Skills"
           subtitle="Technologies and areas I'm exploring"
         />
 
-
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
-
           {skills.map((skill, index) => (
-
             <motion.div
               key={skill}
               initial={{
@@ -516,7 +454,6 @@ export default function Home() {
               }}
               className="group rounded-2xl border border-white/10 bg-white/[0.035] p-6 text-center transition hover:border-cyan-400/40 hover:bg-cyan-400/[0.04]"
             >
-
               <div className="mb-3 text-2xl">
                 {getSkillSymbol(skill)}
               </div>
@@ -524,23 +461,16 @@ export default function Home() {
               <p className="text-sm font-semibold text-gray-300 group-hover:text-white">
                 {skill}
               </p>
-
             </motion.div>
-
           ))}
-
         </div>
-
       </section>
 
-
       {/* PROJECTS */}
-
       <section
         id="projects"
         className="border-y border-white/5 bg-white/[0.02] py-32"
       >
-
         <div className="mx-auto max-w-7xl px-6">
 
           <SectionTitle
@@ -549,11 +479,8 @@ export default function Home() {
             subtitle="Some of the things I'm building"
           />
 
-
           <div className="grid gap-6 lg:grid-cols-3">
-
             {projects.map((project, index) => (
-
               <motion.article
                 key={project.title}
                 initial={{
@@ -573,42 +500,32 @@ export default function Home() {
                 }}
                 className="group relative overflow-hidden rounded-3xl border border-white/10 bg-black/30 p-7 backdrop-blur-xl"
               >
-
                 <div className="absolute right-5 top-5 text-5xl font-black text-white/[0.04]">
                   {project.number}
                 </div>
-
 
                 <div className="mb-10 flex h-14 w-14 items-center justify-center rounded-2xl border border-cyan-400/20 bg-cyan-400/5 text-2xl">
                   {index === 0 ? "🧠" : index === 1 ? "📊" : "⚙️"}
                 </div>
 
-
                 <h3 className="text-2xl font-bold">
                   {project.title}
                 </h3>
-
 
                 <p className="mt-4 text-sm leading-7 text-gray-400">
                   {project.description}
                 </p>
 
-
                 <div className="mt-7 flex flex-wrap gap-2">
-
                   {project.tags.map((tag) => (
-
                     <span
                       key={tag}
                       className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-gray-400"
                     >
                       {tag}
                     </span>
-
                   ))}
-
                 </div>
-
 
                 <a
                   href="https://github.com/fawasp6456-boop"
@@ -618,22 +535,14 @@ export default function Home() {
                 >
                   View on GitHub ↗
                 </a>
-
               </motion.article>
-
             ))}
-
           </div>
-
         </div>
-
       </section>
 
-
       {/* GITHUB */}
-
       <section className="py-32">
-
         <div className="mx-auto max-w-7xl px-6">
 
           <motion.div
@@ -642,7 +551,6 @@ export default function Home() {
             viewport={{ once: true }}
             className="relative overflow-hidden rounded-[2rem] border border-cyan-400/20 bg-gradient-to-br from-cyan-400/[0.08] to-purple-500/[0.08] p-10 text-center md:p-16"
           >
-
             <div className="absolute -right-20 -top-20 h-60 w-60 rounded-full bg-cyan-400/10 blur-3xl" />
 
             <p className="text-sm font-bold uppercase tracking-[0.3em] text-cyan-400">
@@ -666,21 +574,15 @@ export default function Home() {
             >
               github.com/fawasp6456-boop ↗
             </a>
-
           </motion.div>
-
         </div>
-
       </section>
 
-
       {/* CONTACT */}
-
       <section
         id="contact"
         className="border-t border-white/5 bg-white/[0.02] py-32"
       >
-
         <div className="mx-auto max-w-7xl px-6 text-center">
 
           <p className="text-sm font-bold uppercase tracking-[0.3em] text-cyan-400">
@@ -696,7 +598,6 @@ export default function Home() {
             I&apos;m always interested in learning, collaborating and
             building meaningful technology projects.
           </p>
-
 
           <div className="mt-10 flex flex-wrap justify-center gap-4">
 
@@ -729,16 +630,11 @@ export default function Home() {
             />
 
           </div>
-
         </div>
-
       </section>
 
-
       {/* FOOTER */}
-
       <footer className="border-t border-white/10 px-6 py-8">
-
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 text-sm text-gray-500 md:flex-row">
 
           <p>
@@ -751,16 +647,13 @@ export default function Home() {
           </p>
 
         </div>
-
       </footer>
 
     </main>
   );
 }
 
-
 /* SECTION TITLE */
-
 function SectionTitle({
   number,
   title,
@@ -783,7 +676,6 @@ function SectionTitle({
       viewport={{ once: true }}
       className="mb-14"
     >
-
       <span className="text-sm font-bold tracking-widest text-cyan-400">
         {number} /
       </span>
@@ -795,14 +687,11 @@ function SectionTitle({
       <p className="mt-3 text-gray-500">
         {subtitle}
       </p>
-
     </motion.div>
   );
 }
 
-
 /* INFO CARD */
-
 function InfoCard({
   icon,
   title,
@@ -819,7 +708,6 @@ function InfoCard({
       }}
       className="rounded-3xl border border-white/10 bg-white/[0.035] p-8 backdrop-blur-xl"
     >
-
       <div className="mb-6 text-4xl">
         {icon}
       </div>
@@ -831,14 +719,11 @@ function InfoCard({
       <p className="mt-4 text-sm leading-7 text-gray-400">
         {text}
       </p>
-
     </motion.div>
   );
 }
 
-
 /* SOCIAL LINK */
-
 function SocialLink({
   label,
   href,
@@ -858,9 +743,7 @@ function SocialLink({
   );
 }
 
-
 /* CONTACT BUTTON */
-
 function ContactButton({
   title,
   value,
@@ -879,13 +762,11 @@ function ContactButton({
       rel="noreferrer"
       className="group flex min-w-[230px] items-center gap-4 rounded-2xl border border-white/10 bg-black/30 px-5 py-4 text-left transition hover:-translate-y-1 hover:border-cyan-400/40"
     >
-
       <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/5 font-black text-cyan-400">
         {icon}
       </span>
 
       <span>
-
         <span className="block text-xs uppercase tracking-widest text-gray-600">
           {title}
         </span>
@@ -893,16 +774,12 @@ function ContactButton({
         <span className="mt-1 block text-sm font-semibold text-gray-300 group-hover:text-white">
           {value}
         </span>
-
       </span>
-
     </a>
   );
 }
 
-
 /* SKILL SYMBOL */
-
 function getSkillSymbol(skill: string) {
   if (skill === "Python") return "🐍";
   if (skill.includes("Machine")) return "🤖";
